@@ -30,8 +30,11 @@ class ArduinoNunchuk
 
     void init();
     void update();
+    void invert(bool selection);
+    bool invertStatus();
 
   private:
+    bool _invert_FLAG = true;
     void _sendByte(byte data, byte location);
 };
 
