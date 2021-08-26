@@ -58,13 +58,13 @@ void ArduinoNunchuk::update()
   //   ArduinoNunchuk::analogX = 255;
   // }
   //
-  if((ArduinoNunchuk::analogY < 135) && (ArduinoNunchuk::analogY > 120)) {
-    ArduinoNunchuk::analogY = 127;
-  } else if(ArduinoNunchuk::analogY < 8) {
-    ArduinoNunchuk::analogY = 0;
-  } else if(ArduinoNunchuk::analogY > 248) {
-    ArduinoNunchuk::analogY = 255;
-  }
+  // if((ArduinoNunchuk::analogY < 135) && (ArduinoNunchuk::analogY > 120)) {
+  //   ArduinoNunchuk::analogY = 127;
+  // } else if(ArduinoNunchuk::analogY < 8) {
+  //   ArduinoNunchuk::analogY = 0;
+  // } else if(ArduinoNunchuk::analogY > 248) {
+  //   ArduinoNunchuk::analogY = 255;
+  // }
 
   if(_invert_FLAG){
     ArduinoNunchuk::analogX = 255 - ArduinoNunchuk::analogX;
